@@ -35,19 +35,27 @@ My CS Journey is a dynamic website designed to archive and display my notes from
 ## Installation
 
 Clone the repository:
-
+```
 git clone https://github.com/your-username my-cs-journey.git
-
+```
+```
 cd my-cs-journey
+```
 
 Install dependencies:
+```
 npm install
+```
 
 Run the application:
+```
 npm run dev
+```
 
 Build for production:
+```
 npm run build   
+```
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
