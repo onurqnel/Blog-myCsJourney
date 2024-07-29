@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply transition-colors duration-700 ease-in-out;
+}
+
+html.dark {
+  @apply bg-dark text-white;
+}
