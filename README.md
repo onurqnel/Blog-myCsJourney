@@ -56,7 +56,3 @@ npm run dev
 ```
 npm run build   
 ```
-
-## Acknowledgements
-Thanks to the developers of all the libraries and frameworks used in this project.
-Special thanks to Algonquin College and Trent University for the educational resources and inspiration.
