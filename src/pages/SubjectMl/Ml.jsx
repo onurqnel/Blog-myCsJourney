@@ -5,11 +5,36 @@ import Ml1 from "./Ml1";
 import Ml2 from "./Ml2";
 import Ml3 from "./Ml3";
 import GoBackButton from "../../components/utility/GoBackButton";
+import ListItem from "../../components/subjects/ListItem";
 
 const Ml = () => {
   const location = useLocation();
   const subPath = location.pathname.split("/").pop();
   const isSubSubject = subPath !== "Ml" && subPath !== "";
+
+  const listItems = [
+    {
+      to: "Ml1",
+      header: "Introduction to Information Systems",
+      date: "Feb 13",
+      description:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
+    },
+    {
+      to: "Ml2",
+      header: "Organizational Strategy & Competitive Advantage",
+      date: "Feb 13",
+      description:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
+    },
+    {
+      to: "Ml3",
+      header: "Header 3",
+      date: "Feb 13",
+      description:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
+    },
+  ];
 
   return (
     <div className="relative min-h-screen">
@@ -17,61 +42,12 @@ const Ml = () => {
         <nav>
           <SubProfilePicture />
           <h1 className="my-14 text-3xl font-semibold font-piazzolla">
-            Machine Learning
+            Information Systems
           </h1>
-
           <ul>
-            <li>
-              <Link
-                to="Ml1"
-                className="text-2xl hover:underline font-medium font-piazzolla"
-              >
-                Header1
-              </Link>
-              <span className="font-piazzolla text-sm text-gray-500 ml-4">
-                Feb 13
-              </span>
-            </li>
-            <p className="my-8 font-piazzolla">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-              cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit
-              dicta officia et aliquam nulla dolores necessitatibus
-              reprehenderit nisi odio!
-            </p>
-            <li>
-              <Link
-                to="Ml2"
-                className="text-2xl hover:underline font-medium font-piazzolla"
-              >
-                Header2
-              </Link>
-              <span className="font-piazzolla text-sm text-gray-500 ml-4">
-                Feb 13
-              </span>
-            </li>
-            <p className="my-8 font-piazzolla">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-              cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit
-              dicta officia et aliquam nulla dolores necessitatibus
-              reprehenderit nisi odio!
-            </p>
-            <li>
-              <Link
-                to="Ml3"
-                className="text-2xl hover:underline font-medium font-piazzolla"
-              >
-                Header3
-              </Link>
-              <span className="font-piazzolla text-sm text-gray-500 ml-4">
-                Feb 13
-              </span>
-            </li>
-            <p className="my-8 font-piazzolla">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
-              cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit
-              dicta officia et aliquam nulla dolores necessitatibus
-              reprehenderit nisi odio!
-            </p>
+            {listItems.map((item) => (
+              <ListItem key={item.to} {...item} />
+            ))}
           </ul>
           <GoBackButton to="/" label="← Home" />
         </nav>

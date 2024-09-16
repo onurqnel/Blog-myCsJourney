@@ -4,9 +4,9 @@ import SubjectListItem from "./SubjectListItem";
 const subjectData = [
   { to: "/Csharp", title: "C#", date: "Jan 13, 2024" },
   { to: "/Java", title: "Java", date: "Feb 13, 2024" },
-  { to: "/Mathematics", title: "Mathematics", date: "Mar 13, 2024" },
-  { to: "/Ml", title: "Machine Learning", date: "Apr 13, 2024" },
+  { to: "/Mathematics", title: "Calculus 1", date: "Mar 13, 2024" },
   { to: "/Database", title: "Database Systems", date: "May 13, 2024" },
+  { to: "/Ml", title: "Information Systems", date: "Apr 13, 2024" },
 ];
 
 const Subjects = () => {
