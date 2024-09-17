@@ -2,15 +2,15 @@ import React from "react";
 import Note from "../../components/markdown/Markdown";
 import GoBackButton from "../../components/utility/GoBackButton";
 
-const Ml1 = () => {
+const EthicsAndPrivacy = () => {
   return (
     <div className="relative min-h-screen">
       <div className="my-24">
-        <Note notePath="/notes/Ml/Ml1.md" />
+        <Note notePath="/notes/Ml/Ml3.md" />
       </div>
-      <GoBackButton to="/Ml" label="← Previous" />
+      <GoBackButton to="/InformationSystems" label="← Previous" />
     </div>
   );
 };
 
-export default Ml1;
+export default EthicsAndPrivacy;

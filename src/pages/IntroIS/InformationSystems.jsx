@@ -1,35 +1,34 @@
 import React from "react";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import SubProfilePicture from "../../components/picture/SubProfilePicture";
-import Ml1 from "./Ml1";
-import Ml2 from "./Ml2";
-import Ml3 from "./Ml3";
+import IntroIS from "./IntroIS";
+import OSandCA from "./OSandCA";
+import EthicsAndPrivacy from "./EthicsAndPrivacy";
 import GoBackButton from "../../components/utility/GoBackButton";
 import ListItem from "../../components/subjects/ListItem";
 
-const Ml = () => {
+const InformationSystems = () => {
   const location = useLocation();
   const subPath = location.pathname.split("/").pop();
-  const isSubSubject = subPath !== "Ml" && subPath !== "";
-
+  const isSubSubject = subPath !== "InformationSystems" && subPath !== "";
   const listItems = [
     {
-      to: "Ml1",
+      to: "IntroIS",
       header: "Introduction to Information Systems",
       date: "Feb 13",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
     },
     {
-      to: "Ml2",
+      to: "OSandCA",
       header: "Organizational Strategy & Competitive Advantage",
       date: "Feb 13",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
     },
     {
-      to: "Ml3",
-      header: "Header 3",
+      to: "EthicsAndPrivacy",
+      header: "Ethics & Privacy",
       date: "Feb 13",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
@@ -53,12 +52,12 @@ const Ml = () => {
         </nav>
       )}
       <Routes>
-        <Route path="Ml1" element={<Ml1 />} />
-        <Route path="Ml2" element={<Ml2 />} />
-        <Route path="Ml3" element={<Ml3 />} />
+        <Route path="IntroIS" element={<IntroIS />} />
+        <Route path="OSandCA" element={<OSandCA />} />
+        <Route path="EthicsAndPrivacy" element={<EthicsAndPrivacy />} />
       </Routes>
     </div>
   );
 };
 
-export default Ml;
+export default InformationSystems;
