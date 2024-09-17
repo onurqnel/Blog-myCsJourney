@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import SubProfilePicture from "../../components/picture/SubProfilePicture";
-import AnalyticGeometry from "./AnalyticGeometry";
-import Functions from "./Functions";
+import QuadraticFormula from "./QuadraticFormula";
 import Limits from "./Limits";
+import Derivatives from "./Derivatives";
 import GoBackButton from "../../components/utility/GoBackButton";
 import ListItem from "../../components/subjects/ListItem";
 
@@ -14,22 +14,22 @@ const Mathematics = () => {
 
   const listItems = [
     {
-      to: "AnalyticGeometry",
+      to: "QuadraticFormula",
       header: "Quadratic Formula",
       date: "Feb 13",
       description:
-        "Analytic Geometry is essential for pre-Calculus. It covers important topics such as horizontal and vertical distances, the Pythagorean theorem, point-slope form, equations of parallel and perpendicular lines, unit angles of inclination, circles, and the distance between two points, along with various examples.",
-    },
-    {
-      to: "Functions",
-      header: "Limits",
-      date: "Feb 13",
-      description:
-        "Includes circle equation, function graphing, and testing with Vertical Line Test. Domain and range, piecewise functions, natural domain, domain issues in simplification, vertical and horizontal asymptotes, inequalities with domain and range examples, even and odd functions and how to test them, inverse functions, function composition, and trigonometric functions are covered. Additionally, reference angles, shifts and dilations, graphing, and Pythagorean identities are discussed.",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
     },
     {
       to: "Limits",
-      header: "Epsilon - Delta definition",
+      header: "Limits, ε-δ Definition",
+      date: "Feb 13",
+      description:
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
+    },
+    {
+      to: "Limits",
+      header: "Derivatives",
       date: "Feb 13",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
@@ -53,9 +53,9 @@ const Mathematics = () => {
         </nav>
       )}
       <Routes>
-        <Route path="AnalyticGeometry" element={<AnalyticGeometry />} />
-        <Route path="Functions" element={<Functions />} />
+        <Route path="QuadraticFormula" element={<QuadraticFormula />} />
         <Route path="Limits" element={<Limits />} />
+        <Route path="Derivatives" element={<Derivatives />} />
       </Routes>
     </div>
   );

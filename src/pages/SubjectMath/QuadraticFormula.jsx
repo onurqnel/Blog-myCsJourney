@@ -2,16 +2,17 @@ import React from "react";
 import MathMarkdown from "../../components/markdown/MathMarkdown";
 import GoBackButton from "../../components/utility/GoBackButton";
 
-const AnalyticGeometry = () => {
+const QuadraticFormula = () => {
   return (
     <div className="relative min-h-screen  font-medium font-piazzolla">
       <div className="my-24">
-        <h1 className="text-2xl font-bold font-piazzolla">Analytic Geometry</h1>
-        <MathMarkdown notePath="/notes/Mathematics/AnalyticGeometry.md" />
+        <h1 className="text-2xl font-bold font-piazzolla">Quadratic Formula</h1>
+        <br />
+        <MathMarkdown notePath="/notes/Mathematics/QuadraticFormula.md" />
       </div>
       <GoBackButton to="/Mathematics" label="← Previous" />
     </div>
   );
 };
 
-export default AnalyticGeometry;
+export default QuadraticFormula;

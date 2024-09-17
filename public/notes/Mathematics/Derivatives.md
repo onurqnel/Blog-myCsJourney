@@ -1,6 +1,9 @@
 # Introduction to Algebra
 
 In this lesson, we will explore the basics of algebra. Algebra is a branch of mathematics dealing with symbols and the rules for manipulating those symbols.
+$$
+E = mc^2
+$$
 
 ## Basic Concepts
 
