@@ -6,7 +6,7 @@ const OSandCA = () => {
   return (
     <div className="relative min-h-screen">
       <div className="my-24">
-        <Note notePath="/notes/Ml/Ml2.md" />
+        <Note notePath="/notes/InformationSystems/OSandCA.md" />
       </div>
       <GoBackButton to="/InformationSystems" label="← Previous" />
     </div>

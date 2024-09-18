@@ -28,7 +28,7 @@ const Mathematics = () => {
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
     },
     {
-      to: "Limits",
+      to: "Derivatives",
       header: "Derivatives",
       date: "Feb 13",
       description:

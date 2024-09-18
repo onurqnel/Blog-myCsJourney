@@ -1,70 +1,83 @@
-# Introduction to Algebra
-
-In this lesson, we will explore the basics of algebra. Algebra is a branch of mathematics dealing with symbols and the rules for manipulating those symbols.
-$$
-E = mc^2
-$$
-
-## Basic Concepts
-
-### Variables
-
-A variable is a symbol used to represent a number in expressions or equations. For example, in the equation:
+**If the function is continuous at point "a":**
 
 $$
-x + 2 = 5
+\lim _{x \rightarrow a} \sin (x) = \sin (a)
 $$
 
-### Expressions
+<br>
 
-An expression is a combination of numbers, variables, and operations. For example:
-
-$$
-3x + 2
-$$
-
-### Equations
-
-An equation is a statement that two expressions are equal. For example:
+**Sum Rule:**
 
 $$
-3x + 2 = 11
+\lim _{x \rightarrow a} f(x) = L, \quad \lim _{x \rightarrow a} g(x) = M
 $$
 
-### Solving Equations
-
-To solve an equation, we find the value of the variable that makes the equation true. For example, to solve the equation:
-
 $$
-3x + 2 = 11
+\lim _{x \rightarrow a}(f(x) + g(x)) = L + M
 $$
 
-We subtract 2 from both sides:
+<br>
+
+**Product Rule:**
 
 $$
-3x = 9
+\lim _{x \rightarrow a} f(x) \cdot g(x) = L \cdot M
 $$
 
-Then divide by 3:
+<br>
+
+**Quotient Rule:**
 
 $$
-x = 3
+\lim _{x \rightarrow a} \frac{f(x)}{g(x)} = \frac{L}{M}, \quad M \neq 0
 $$
 
-## Quadratic Equations
+<br>
 
-A quadratic equation is an equation of the form:
-
-$$
-ax^2 + bx + c = 0
-$$
-
-The solutions to a quadratic equation can be found using the quadratic formula:
+**Composition Rule:**
 
 $$
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\lim _{x \rightarrow a} g(f(x)) = g(L)
+$$
+<br>
+<br>
+
+___
+
+<br>
+<br>
+
+**Example Limits**
+
+$$
+\lim_{x \to 2} \frac{x^2 - 4}{x^2 + x - 6} = \frac{(x-2)(x+2)}{(x-2)(x+3)} = \frac{x+2}{x+3} = \frac{4}{5}
 $$
 
-## Conclusion
+<br>
 
-Algebra is a fundamental branch of mathematics that provides a way to represent and solve problems using variables and equations. Understanding these basic concepts will help you in more advanced topics in mathematics.
+$$
+\lim_{x \to 0} \frac{(x^2 + 13x + 15)e^x + 3}{e^{x^2 + 13x + 15}} = \frac{15 e^0 + 3}{e^{15}} = \frac{18}{e^{15}}
+$$
+
+<br>
+
+$$
+\lim_{x \to 0} \frac{x \sin(3x) + 15\pi}{\sin(x^2 + 13x + 41)} = \frac{15\pi}{\sin(41)}
+$$
+
+<br>
+
+1. **Limits (Using L'Hopital's Rule):**
+$$
+\lim_{h \to 0} \frac{e^h - 1}{h} = \lim_{h \to 0} e^h = 1
+$$
+<br>
+$$
+\lim_{x \to 0} \frac{\sin(x)}{x} = 1
+$$
+
+<br>
+
+$$
+\lim_{x \to 0} \frac{\cos(x) - 1}{x} = 0
+$$

@@ -6,7 +6,7 @@ const EthicsAndPrivacy = () => {
   return (
     <div className="relative min-h-screen">
       <div className="my-24">
-        <Note notePath="/notes/Ml/Ml3.md" />
+        <Note notePath="/notes/InformationSystems/EthicsAndPrivacy.md" />
       </div>
       <GoBackButton to="/InformationSystems" label="← Previous" />
     </div>
