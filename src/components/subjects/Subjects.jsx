@@ -1,22 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import SubjectListItem from "./SubjectListItem";
-
-const subjectData = [
-  { to: "/Csharp", title: "C#", date: "Jan 13, 2024" },
-  { to: "/Java", title: "Java", date: "Feb 13, 2024" },
-  { to: "/Mathematics", title: "Calculus 1", date: "Mar 13, 2024" },
-  { to: "/Database", title: "Database Systems", date: "May 13, 2024" },
-  { to: "/InformationSystems", title: "Information Systems", date: "Apr 13, 2024" },
-];
+import { termData } from "../../data/termData";
 
 const Subjects = () => {
+  const [openTerms, setOpenTerms] = useState([]);
+  const handleTermClick = (term) => {
+    if (openTerms.includes(term)) {
+      setOpenTerms(openTerms.filter((t) => t !== term));
+    } else {
+      setOpenTerms([...openTerms, term]);
+    }
+  };
+
   return (
     <div className="font-piazzolla my-12">
-      <ul className="space-y-6">
-        {subjectData.map((subject) => (
-          <SubjectListItem key={subject.to} {...subject} />
-        ))}
-      </ul>
+      {termData.map((term) => (
+        <div key={term.term} className="mb-8">
+          <h2
+            className="text-xl font-semibold mb-4 cursor-pointer hover:underline"
+            onClick={() => handleTermClick(term.term)}
+          >
+            {term.term}
+          </h2>
+          {openTerms.includes(term.term) && (
+            <ul className="space-y-6">
+              {term.subjects.map((subject) => (
+                <SubjectListItem key={subject.to} {...subject} />
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
     </div>
   );
 };

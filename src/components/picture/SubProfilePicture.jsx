@@ -4,9 +4,7 @@ import ProfilePicture from "../layout/ProfilePicture";
 
 const SubProfilePicture = () => {
   return (
-    <Link to="/">
       <ProfilePicture size="small" />
-    </Link>
   );
 };
 

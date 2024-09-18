@@ -10,7 +10,7 @@ const QuadraticFormula = () => {
         <br />
         <MathMarkdown notePath="/notes/Mathematics/QuadraticFormula.md" />
       </div>
-      <GoBackButton to="/Mathematics" label="← Previous" />
+      <GoBackButton to="Fall24/Mathematics" label="← Previous" />
     </div>
   );
 };

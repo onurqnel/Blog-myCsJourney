@@ -8,7 +8,7 @@ const Derivatives = () => {
       <div className="my-24">
         <MathMarkdown notePath="/notes/Mathematics/Derivatives.md" />
       </div>
-      <GoBackButton to="/Mathematics" label="← Previous" />
+      <GoBackButton to="Fall24/Mathematics" label="← Previous" />
     </div>
   );
 };
