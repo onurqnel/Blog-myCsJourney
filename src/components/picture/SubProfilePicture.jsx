@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ProfilePicture from "../layout/ProfilePicture";
 
 const SubProfilePicture = () => {

@@ -1,16 +1,16 @@
 import React from "react";
-import { Routes, Route, Link, useLocation } from "react-router-dom";
-import SubProfilePicture from "../../components/picture/SubProfilePicture";
+import { Routes, Route, useLocation } from "react-router-dom";
 import IntroIS from "./IntroIS";
 import OSandCA from "./OSandCA";
 import EthicsAndPrivacy from "./EthicsAndPrivacy";
-import GoBackButton from "../../components/utility/GoBackButton";
-import ListItem from "../../components/subjects/ListItem";
+import GoBackButton from "../../../components/utility/GoBackButton";
+import ListItem from "../../../components/subjects/ListItem";
 
 const InformationSystems = () => {
   const location = useLocation();
   const subPath = location.pathname.split("/").pop();
   const isSubSubject = subPath !== "InformationSystems" && subPath !== "";
+
   const listItems = [
     {
       to: "IntroIS",
@@ -39,7 +39,6 @@ const InformationSystems = () => {
     <div className="relative min-h-screen">
       {!isSubSubject && (
         <nav>
-          <SubProfilePicture />
           <h1 className="my-14 text-3xl font-semibold font-piazzolla">
             Information Systems
           </h1>

@@ -1,6 +1,6 @@
 import React from "react";
-import Note from "../../components/markdown/Markdown";
-import GoBackButton from "../../components/utility/GoBackButton";
+import Note from "../../../components/markdown/Markdown";
+import GoBackButton from "../../../components/utility/GoBackButton";
 
 const Csharp1 = () => {
   return (

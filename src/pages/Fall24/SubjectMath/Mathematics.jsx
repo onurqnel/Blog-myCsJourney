@@ -1,35 +1,37 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import SubProfilePicture from "../../components/picture/SubProfilePicture";
-import Database1 from "./Database1";
-import Database2 from "./Database2";
-import Database3 from "./Database3";
-import GoBackButton from "../../components/utility/GoBackButton";
-import ListItem from "../../components/subjects/ListItem";
+import QuadraticFormula from "./QuadraticFormula";
+import Limits from "./Limits";
+import Derivatives from "./Derivatives";
+import GoBackButton from "../../../components/utility/GoBackButton";
+import ListItem from "../../../components/subjects/ListItem";
 
-const Database = () => {
+
+const Mathematics = () => {
   const location = useLocation();
   const subPath = location.pathname.split("/").pop();
-  const isSubSubject = subPath !== "Database" && subPath !== "";
+  const isMainPage = subPath === "Mathematics";
+  
+  console.log("Is main page:", isMainPage); // Debugging
 
   const listItems = [
     {
-      to: "Database1",
-      header: "Header1",
+      to: "QuadraticFormula",
+      header: "Quadratic Formula",
       date: "Feb 13",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
     },
     {
-      to: "Database2",
-      header: "Header2",
+      to: "Limits",
+      header: "Limits, ε-δ Definition",
       date: "Feb 13",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
     },
     {
-      to: "Database3",
-      header: "Header3",
+      to: "Derivatives",
+      header: "Derivatives",
       date: "Feb 13",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
@@ -38,11 +40,10 @@ const Database = () => {
 
   return (
     <div className="relative min-h-screen">
-      {!isSubSubject && (
+      {isMainPage && (
         <nav>
-          <SubProfilePicture />
           <h1 className="my-14 text-3xl font-semibold font-piazzolla">
-            Database Systems
+            Calculus 1
           </h1>
           <ul>
             {listItems.map((item) => (
@@ -53,12 +54,12 @@ const Database = () => {
         </nav>
       )}
       <Routes>
-        <Route path="Database1" element={<Database1 />} />
-        <Route path="Database2" element={<Database2 />} />
-        <Route path="Database3" element={<Database3 />} />
+        <Route path="QuadraticFormula" element={<QuadraticFormula />} />
+        <Route path="Limits" element={<Limits />} />
+        <Route path="Derivatives" element={<Derivatives />} />
       </Routes>
     </div>
   );
 };
 
-export default Database;
+export default Mathematics;

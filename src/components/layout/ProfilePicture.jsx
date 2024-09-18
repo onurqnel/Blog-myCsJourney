@@ -7,6 +7,7 @@ const sizeClasses = {
 };
 
 const ProfilePicture = ({ size, className = "", ...props }) => {
+  console.log("Rendering ProfilePicture with size:", size);
   const sizeClass = sizeClasses[size] || sizeClasses.small;
 
   return (

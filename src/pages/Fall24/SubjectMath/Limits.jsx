@@ -1,6 +1,6 @@
 import React from "react";
-import MathMarkdown from "../../components/markdown/MathMarkdown";
-import GoBackButton from "../../components/utility/GoBackButton";
+import MathMarkdown from "../../../components/markdown/MathMarkdown";
+import GoBackButton from "../../../components/utility/GoBackButton";
 
 const Limits = () => {
   return (

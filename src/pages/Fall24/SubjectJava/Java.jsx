@@ -1,34 +1,33 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import SubProfilePicture from "../../components/picture/SubProfilePicture";
-import Csharp1 from "./Csharp1";
-import Csharp2 from "./Csharp2";
-import Csharp3 from "./Csharp3";
-import GoBackButton from "../../components/utility/GoBackButton";
-import ListItem from "../../components/subjects/ListItem";
+import Java1 from "./Java1";
+import Java2 from "./Java2";
+import Java3 from "./Java3";
+import GoBackButton from "../../../components/utility/GoBackButton";
+import ListItem from "../../../components/subjects/ListItem";
 
-const Csharp = () => {
+const Java = () => {
   const location = useLocation();
   const subPath = location.pathname.split("/").pop();
-  const isSubSubject = subPath !== "Csharp" && subPath !== "";
+  const isSubSubject = subPath !== "Java" && subPath !== "";
 
   const listItems = [
     {
-      to: "Csharp1",
+      to: "Java1",
       header: "Header1",
       date: "Feb 13",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
     },
     {
-      to: "Csharp2",
+      to: "Java2",
       header: "Header2",
       date: "Feb 13",
       description:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia cum architecto unde ea dolor explicabo nam quod nisi! Rerum fugit dicta officia et aliquam nulla dolores necessitatibus reprehenderit nisi odio!",
     },
     {
-      to: "Csharp3",
+      to: "Java3",
       header: "Header3",
       date: "Feb 13",
       description:
@@ -40,8 +39,7 @@ const Csharp = () => {
     <div className="relative min-h-screen">
       {!isSubSubject && (
         <nav>
-          <SubProfilePicture />
-          <h1 className="my-14 text-3xl font-semibold font-piazzolla">C#</h1>
+          <h1 className="my-14 text-3xl font-semibold font-piazzolla">Java</h1>
           <ul>
             {listItems.map((item) => (
               <ListItem key={item.to} {...item} />
@@ -51,12 +49,12 @@ const Csharp = () => {
         </nav>
       )}
       <Routes>
-        <Route path="Csharp1" element={<Csharp1 />} />
-        <Route path="Csharp2" element={<Csharp2 />} />
-        <Route path="Csharp3" element={<Csharp3 />} />
+        <Route path="Java1" element={<Java1 />} />
+        <Route path="Java2" element={<Java2 />} />
+        <Route path="Java3" element={<Java3 />} />
       </Routes>
     </div>
   );
 };
 
-export default Csharp;
+export default Java;
