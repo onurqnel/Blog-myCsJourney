@@ -15,7 +15,7 @@ const Subjects = () => {
   return (
     <div className="font-piazzolla my-12">
       {termData.map((term) => (
-        <div key={term.term} className="mb-8">
+        <div key={term.term} className="mb-6">
           <h2
             className="text-xl font-semibold mb-4 cursor-pointer hover:underline"
             onClick={() => handleTermClick(term.term)}

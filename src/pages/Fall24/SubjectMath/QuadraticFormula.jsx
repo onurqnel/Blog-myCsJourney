@@ -6,7 +6,7 @@ const QuadraticFormula = () => {
   return (
     <div className="relative min-h-screen  font-medium font-piazzolla">
       <div className="my-24">
-        <h1 className="text-2xl font-bold font-piazzolla">Quadratic Formula</h1>
+        <h1 className="text-4xl font-bold font-piazzolla">Quadratic Formula</h1>
         <br />
         <MathMarkdown notePath="/notes/Mathematics/QuadraticFormula.md" />
       </div>
