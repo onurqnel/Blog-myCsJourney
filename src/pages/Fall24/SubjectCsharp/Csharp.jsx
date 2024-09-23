@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import GoBackButton from "../../../components/utility/GoBackButton";
-import ListItem from "../../../components/subjects/ListItem";
+import SubjectItem from "../../../components/subjects/SubjectItem";
 import Csharp1 from "./Csharp1";
 import Csharp2 from "./Csharp2";
 import Csharp3 from "./Csharp3";
@@ -42,7 +42,7 @@ const Csharp = () => {
           <h1 className="my-14 text-3xl font-semibold font-piazzolla">C#</h1>
           <ul>
             {listItems.map((item) => (
-              <ListItem key={item.to} {...item} />
+              <SubjectItem key={item.to} {...item} />
             ))}
           </ul>
           <GoBackButton to="/" label="← Home" />

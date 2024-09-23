@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ListItem = ({ to, header, date, description }) => {
+const SubjectItem = ({ to, header, date, description }) => {
   return (
     <li className="mb-8">
       <Link
@@ -16,4 +16,4 @@ const ListItem = ({ to, header, date, description }) => {
   );
 };
 
-export default ListItem;
+export default SubjectItem;

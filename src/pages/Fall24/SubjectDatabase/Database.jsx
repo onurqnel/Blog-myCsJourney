@@ -4,7 +4,7 @@ import Database1 from "./Database1";
 import Database2 from "./Database2";
 import Database3 from "./Database3";
 import GoBackButton from "../../../components/utility/GoBackButton";
-import ListItem from "../../../components/subjects/ListItem";
+import SubjectItem from "../../../components/subjects/SubjectItem";
 
 const Database = () => {
   const location = useLocation();
@@ -44,7 +44,7 @@ const Database = () => {
           </h1>
           <ul>
             {listItems.map((item) => (
-              <ListItem key={item.to} {...item} />
+              <SubjectItem key={item.to} {...item} />
             ))}
           </ul>
           <GoBackButton to="/" label="← Home" />

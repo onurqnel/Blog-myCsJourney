@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SubjectListItem from "./SubjectListItem";
+import TermListItem from "./TermListItem";
 import { termData } from "../../data/termData";
 
 const Subjects = () => {
@@ -14,18 +14,18 @@ const Subjects = () => {
 
   return (
     <div className="font-piazzolla my-12">
-      {termData.map((term) => (
-        <div key={term.term} className="mb-6">
+      {termData.map((termData) => (
+        <div key={termData.term} className="mb-6">
           <h2
             className="text-xl font-semibold mb-4 cursor-pointer hover:underline"
-            onClick={() => handleTermClick(term.term)}
+            onClick={() => handleTermClick(termData.term)}
           >
-            {term.term}
+            {termData.term}
           </h2>
-          {openTerms.includes(term.term) && (
+          {openTerms.includes(termData.term) && (
             <ul className="space-y-6">
-              {term.subjects.map((subject) => (
-                <SubjectListItem key={subject.to} {...subject} />
+              {termData.subjects.map((subject) => (
+                <TermListItem key={subject.to} {...subject} />
               ))}
             </ul>
           )}

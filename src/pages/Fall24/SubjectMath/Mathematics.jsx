@@ -4,7 +4,7 @@ import QuadraticFormula from "./QuadraticFormula";
 import Limits from "./Limits";
 import Derivatives from "./Derivatives";
 import GoBackButton from "../../../components/utility/GoBackButton";
-import ListItem from "../../../components/subjects/ListItem";
+import SubjectItem from "../../../components/subjects/SubjectItem";
 
 
 const Mathematics = () => {
@@ -47,7 +47,7 @@ const Mathematics = () => {
           </h1>
           <ul>
             {listItems.map((item) => (
-              <ListItem key={item.to} {...item} />
+              <SubjectItem key={item.to} {...item} />
             ))}
           </ul>
           <GoBackButton to="/" label="← Home" />

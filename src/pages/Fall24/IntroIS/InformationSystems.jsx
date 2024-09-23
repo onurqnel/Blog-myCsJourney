@@ -4,7 +4,7 @@ import IntroIS from "./IntroIS";
 import OSandCA from "./OSandCA";
 import EthicsAndPrivacy from "./EthicsAndPrivacy";
 import GoBackButton from "../../../components/utility/GoBackButton";
-import ListItem from "../../../components/subjects/ListItem";
+import SubjectItem from "../../../components/subjects/SubjectItem";
 
 const InformationSystems = () => {
   const location = useLocation();
@@ -44,7 +44,7 @@ const InformationSystems = () => {
           </h1>
           <ul>
             {listItems.map((item) => (
-              <ListItem key={item.to} {...item} />
+              <SubjectItem key={item.to} {...item} />
             ))}
           </ul>
           <GoBackButton to="/" label="← Home" />

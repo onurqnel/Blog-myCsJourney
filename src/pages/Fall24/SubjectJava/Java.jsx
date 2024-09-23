@@ -4,7 +4,7 @@ import Java1 from "./Java1";
 import Java2 from "./Java2";
 import Java3 from "./Java3";
 import GoBackButton from "../../../components/utility/GoBackButton";
-import ListItem from "../../../components/subjects/ListItem";
+import SubjectItem from "../../../components/subjects/SubjectItem";
 
 const Java = () => {
   const location = useLocation();
@@ -42,7 +42,7 @@ const Java = () => {
           <h1 className="my-14 text-3xl font-semibold font-piazzolla">Java</h1>
           <ul>
             {listItems.map((item) => (
-              <ListItem key={item.to} {...item} />
+              <SubjectItem key={item.to} {...item} />
             ))}
           </ul>
           <GoBackButton to="/" label="← Home" />
